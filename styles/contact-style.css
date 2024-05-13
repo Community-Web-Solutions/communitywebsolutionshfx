@@ -54,3 +54,36 @@ nav ul li:hover {
     background-color: #9DB2BF;
     border-radius: 15px;
 }
+
+a{
+    color: white;
+}
+
+#flex-container {
+    justify-content: space-around;
+    display: flex;
+    padding: 30px;
+}
+
+.flex-content {
+    justify-content: space-around;
+    width: 85vw;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px; /* Added border-radius to match image */
+}
+
+.flex-content:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    align-content: center;
+    padding-top: 40px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
