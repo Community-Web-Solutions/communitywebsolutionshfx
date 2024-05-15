@@ -1,3 +1,4 @@
+/* Default styles */
 body {
     background-color: #27374D;
     color: white;
@@ -55,63 +56,84 @@ nav ul li:hover {
     border-radius: 15px;
 }
  
-.flex-content {
+.flex-content, .name {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row; /* Changed flex-direction to column */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     gap: 40px;
-    font-family: Arial;
     padding: 30px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 25px; /* Added border-radius to match image */
+    max-width: 80vw; /* Adjusted width to take 80% of the viewport width */
+    
 }
 
-img{
+img {
     border-radius: 25px;
 }
+
 img:hover {
     transform: scale(1.1);
     transition: transform 0.3s; /* Moved transition from img:hover to its own line */
 }
 
 #tagline, #about {
-    width: 40%;
+    width: 100%; /* Changed width to 100% */
 }
 
 .flex-container {
-    padding-top: 200px;
+    padding-top: 50px; /* Adjusted padding-top */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
 }
 
-@media only screen and (max-width: 768px) {
-    .flex-content {
-        display: flex; /* Add flexbox */
-        flex-direction: column; /* Stack items vertically */
-        justify-content: center; /* Vertically center items */
-        align-items: center; /* Horizontally center items */
-        width: 100%;
-        padding: 30px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        border-radius: 25px;
-        margin-bottom: 20px;
-    }
-
-    img {
-        display: block;
-        width: 350px;
-        margin-bottom: 20px;
-        border-radius: 25px;
-    }
-
-    #tagline,
-    #about {
-        width: 100%;
-    }
-}
-
-a{
+a {
     color: white;
 }
 
-footer{
+footer {
     padding-top: 30px;
 }
+
+.namecards {
+    display: flex;
+    flex-direction: column; /* Changed flex-direction to column */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.namepics {
+    gap: 20px;
+    border-radius: 25px;
+}
+
+.nameabout {
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .flex-content, .name {
+        width: 70vw; /* Adjusted width for smaller screens */
+        flex-direction: column;
+    }
+    img {
+        width: 200px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .flex-content, .name {
+        width: 70vw; /* Adjusted width for medium screens */
+        flex-direction: column;
+    }
+}
+
+
