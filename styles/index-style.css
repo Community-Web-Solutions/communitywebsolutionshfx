@@ -56,7 +56,7 @@ nav ul li:hover {
     border-radius: 15px;
 }
  
-.flex-content, .name {
+.flex-content, .name, .testimonials {
     display: flex;
     flex-direction: row; /* Changed flex-direction to column */
     justify-content: center; /* Center vertically */
@@ -101,7 +101,7 @@ footer {
     padding-top: 30px;
 }
 
-.namecards {
+.namecards, .review {
     display: flex;
     flex-direction: column; /* Changed flex-direction to column */
     justify-content: center; /* Center vertically */
